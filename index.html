@@ -542,11 +542,12 @@
     .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 
     .submit-btn {
-      width: 100%;
       background: var(--saffron);
       color: #fff;
       border: none;
       padding: 14px;
+      padding-left:200px;
+      padding-right:200px;
       border-radius: 50px;
       font-family: 'Nunito', sans-serif;
       font-size: 25px;
@@ -817,81 +818,30 @@
 
     </div>
   </section>
+  <div class="contact-form">
+  <h3>Contact Us</h3>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <p class="section-label">Find Us</p>
-    <h2 class="section-title">Contact Us</h2>
-    <p class="section-sub">We'd love to hear from you — come visit, call, or drop us a message!</p>
-
-    <div class="contact-grid">
-      <div class="contact-info">
-        <h3>Come Say Hello 👋</h3>
-
-        <div class="contact-item">
-          <div class="contact-icon">📍</div>
-          <div>
-            <strong>Our Location</strong>
-            <span>123 Curry Lane, Food Street<br>Your City – 500001</span>
-          </div>
-        </div>
-
-        <div class="contact-item">
-          <div class="contact-icon">📞</div>
-          <div>
-            <strong>Phone</strong>
-            <span>+91 98765 43210</span>
-          </div>
-        </div>
-
-        <div class="contact-item">
-          <div class="contact-icon">✉️</div>
-          <div>
-            <strong>Email</strong>
-            <span>hello@spicegarden.in</span>
-          </div>
-        </div>
-
-        <div class="contact-item">
-          <div class="contact-icon">🕐</div>
-          <div>
-            <strong>Opening Hours</strong>
-            <span>Mon – Sun: 11:00 AM – 10:30 PM</span>
-          </div>
-        </div>
-
-        <div class="contact-item">
-          <div class="contact-icon">🌐</div>
-          <div>
-            <strong>Follow Us</strong>
-            <span>@SpiceGarden on Instagram & Facebook</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="contact-form">
-        <h3>Contact Us</h3>
-        <div class="form-row">
-          <div class="form-group">
-            <label>Your Name</label>
-            <input type="text" placeholder="Name" />
-          </div>
-          <div class="form-group">
-            <label>Phone Number</label>
-            <input type="tel" placeholder="+91 XXXXX XXXXX" />
-          </div>
-        </div>
-        <div class="form-row">
-          </div>
-        </div>
-        <div class="form-group">
-          <label>MESSAGE</label>
-          <textarea placeholder="Any dietary requirements, celebrations, or preferences..."></textarea>
-        </div>
-        <button class="submit-btn">Submit</button>
-      </div>
+  <div class="form-row">
+    <div class="form-group">
+      <label>Your Name</label>
+      <input type="text" placeholder="Name" />
     </div>
-  </section>
+
+    <div class="form-group">
+      <label>Phone Number</label>
+      <input type="tel" placeholder="+91 XXXXX XXXXX" />
+    </div>
+  </div> <!-- ✅ CLOSE form-row properly -->
+
+  <div class="form-group">
+    <label>MESSAGE</label>
+    <textarea placeholder="Any dietary requirements, celebrations, or preferences..."></textarea>
+  </div>
+
+  <button class="submit-btn">Submit</button>
+</div>
+
+  
 
   <!-- FOOTER -->
   <footer>
