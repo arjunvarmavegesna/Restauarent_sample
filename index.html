@@ -595,8 +595,52 @@
       .nav-links { display: none; }
       .hero-btns { flex-direction: column; }
     }
+    /* Hide menu icon on desktop */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Nav links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #fff;
+    width: 200px;
+    padding: 20px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
   </style>
 </head>
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("nav-links");
+
+  toggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
 <body>
 
   <!-- NAV -->
@@ -611,6 +655,29 @@
       <li><a href="#contact">Contact Us</a></li>
       <li><a href="#contact" class="nav-cta">Reserve a Table</a></li>
     </ul>
+  <nav class="navbar">
+      <div class="logo">SpiceGarden</div>
+
+  <!-- Menu Icon -->
+      <div class="menu-toggle" id="menu-toggle">
+    ☰
+      </div>
+
+  <!-- Nav Links -->
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+  </ul>
+</nav>
+
+  <!-- Nav Links -->
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+  </ul>
+</nav>
   </nav>
 
   <!-- HOME / HERO -->
@@ -861,3 +928,4 @@
 
 </body>
 </html>
+
