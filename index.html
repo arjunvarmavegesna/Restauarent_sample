@@ -633,53 +633,26 @@
 }
   </style>
 </head>
-<script>
-  const toggle = document.getElementById("menu-toggle");
-  const navLinks = document.getElementById("nav-links");
-
-  toggle.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-  });
-</script>
 <body>
-
-  <!-- NAV -->
-  <nav>
-    <a class="logo" href="#home">
-      <div class="logo-icon">🍛</div>
-      <div class="logo-text">Spice<span>Garden</span></div>
-    </a>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#specials">Special Items</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-      <li><a href="#contact" class="nav-cta">Reserve a Table</a></li>
-    </ul>
-  <nav class="navbar">
-      <div class="logo">SpiceGarden</div>
+<!-- NAV -->
+<nav>
+  <a class="logo" href="#home">
+    <div class="logo-icon">🍛</div>
+    <div class="logo-text">Spice<span>Garden</span></div>
+  </a>
 
   <!-- Menu Icon -->
-      <div class="menu-toggle" id="menu-toggle">
+  <div class="menu-toggle" id="menu-toggle">
     ☰
-      </div>
+  </div>
 
-  <!-- Nav Links -->
   <ul class="nav-links" id="nav-links">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About Us</a></li>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#specials">Special Items</a></li>
     <li><a href="#contact">Contact Us</a></li>
+    <li><a href="#contact" class="nav-cta">Reserve a Table</a></li>
   </ul>
 </nav>
-
-  <!-- Nav Links -->
-  <ul class="nav-links" id="nav-links">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About Us</a></li>
-    <li><a href="#contact">Contact Us</a></li>
-  </ul>
-</nav>
-  </nav>
-
   <!-- HOME / HERO -->
   <section id="home">
     <div class="hero-bg"></div>
@@ -925,7 +898,14 @@
   <footer>
     <p>© 2024 <strong>Spice Garden</strong> — All Rights Reserved. Made with ❤️ & lots of spice.</p>
   </footer>
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("nav-links");
 
+  toggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
 </body>
 </html>
 
